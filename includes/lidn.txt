@@ -1,0 +1,1 @@
+fsdasdfa:5:{i:0;s:131:"Downloading install package from https://github.com/stackthemes/bstone-demo-pack/raw/master/packages/bstone/bstone-store.zip&#8230;";i:1;s:28:"Unpacking the package&#8230;";i:2;s:26:"Installing the demo&#8230;";i:3;s:43:"Removing the old version of the demo&#8230;";i:4;s:28:"Demo installed successfully.";}

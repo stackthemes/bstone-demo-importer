@@ -1,0 +1,615 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bstone Demo Importer\n"
+"POT-Creation-Date: 2019-10-21 10:43+0500\n"
+"PO-Revision-Date: 2019-10-21 10:44+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;gettext;dgettext:2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-demo-pack-upgrader.php:35
+msgid "Install package not available."
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:37
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:38
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:39
+msgid "Removing the old version of the demo&#8230;"
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:40
+msgid "Could not remove the old demo."
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:41
+msgid "Installing the demo&#8230;"
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:42
+msgid "The demo contains no files."
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:43
+msgid "Demo install failed."
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:44
+msgid "Demo installed successfully."
+msgstr ""
+
+#: includes/admin/class-demo-pack-upgrader.php:121
+msgid "No valid demos were found."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-importer.php:47
+msgid "Without Page Builder"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-importer.php:75
+msgid "Sync Demos List"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-importer.php:112
+#, php-format
+msgid "<span>Imported:</span> %s"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-importer.php:247
+#: includes/class-demo-importer.php:220
+msgid "Collapse Sidebar"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-importer.php:267
+msgid "Preview"
+msgstr ""
+
+#: includes/admin/views/html-notice-reset-wizard-success.php:14
+#, php-format
+msgid ""
+"WordPress has been reset back to defaults. The user <strong>\"%1$s\"</"
+"strong> was recreated with its previous password."
+msgstr ""
+
+#: includes/admin/views/html-notice-reset-wizard.php:12
+msgid ""
+"<strong>Reset Wizard</strong> &#8211; If you need to reset the WordPress "
+"back to default again :)"
+msgstr ""
+
+#: includes/admin/views/html-notice-reset-wizard.php:13
+msgid "Run the Reset Wizard"
+msgstr ""
+
+#: includes/admin/views/html-notice-reset-wizard.php:13
+msgid "Hide this notice"
+msgstr ""
+
+#: includes/class-bstone-demo-importer.php:223
+msgid "View Demo Importer"
+msgstr ""
+
+#: includes/class-bstone-demo-importer.php:223
+#: includes/class-demo-importer.php:122
+msgid "Demo Importer"
+msgstr ""
+
+#: includes/class-bstone-demo-importer.php:239
+msgid "View Demo Importer Documentation"
+msgstr ""
+
+#: includes/class-bstone-demo-importer.php:239
+msgid "Docs"
+msgstr ""
+
+#: includes/class-bstone-demo-importer.php:240
+msgid "Visit Free Customer Support Forum"
+msgstr ""
+
+#: includes/class-bstone-demo-importer.php:240
+msgid "Free Support"
+msgstr ""
+
+#: includes/class-demo-importer.php:183
+msgid "Importing..."
+msgstr ""
+
+#: includes/class-demo-importer.php:185
+msgid "Importing... please wait."
+msgstr ""
+
+#: includes/class-demo-importer.php:186
+msgid "Import completed successfully."
+msgstr ""
+
+#: includes/class-demo-importer.php:187
+msgid "Import Failed!"
+msgstr ""
+
+#: includes/class-demo-importer.php:188
+#, php-format
+msgid "Import failed: %s"
+msgstr ""
+
+#: includes/class-demo-importer.php:191
+msgid "Live Preview"
+msgstr ""
+
+#: includes/class-demo-importer.php:193
+msgid "Imported!"
+msgstr ""
+
+#: includes/class-demo-importer.php:194
+msgid "Try this solution!"
+msgstr ""
+
+#: includes/class-demo-importer.php:208
+msgid ""
+"It is strongly recommended that you backup your database before proceeding. "
+"Are you sure you wish to run the reset wizard now?"
+msgstr ""
+
+#: includes/class-demo-importer.php:209
+msgid ""
+"Importing demo data will ensure that your site will look similar as theme "
+"demo. It makes you easy to modify the content instead of creating them from "
+"scratch. Also consider before importing theme demo: \n"
+"\n"
+"1. It will install the required plugin as well as activate them for "
+"installing theme demo. \n"
+"\n"
+"2. You need to import demo on fresh WordPress install to exactly replicate "
+"the theme demo. \n"
+"\n"
+"3. None of the posts, pages, attachments or any other data already existing "
+"in your site will be deleted or modified. \n"
+"\n"
+"4. Copyright images will get replaced with other placeholder images. \n"
+"\n"
+"5. It will take some time to import the theme demo."
+msgstr ""
+
+#: includes/class-demo-importer.php:212
+msgid "Search Demos"
+msgstr ""
+
+#: includes/class-demo-importer.php:213
+msgid "Search demos..."
+msgstr ""
+
+#: includes/class-demo-importer.php:215
+#, php-format
+msgid ""
+"An unexpected error occurred. Something may be wrong with Bstone demo "
+"server&#8217;s configuration. If you continue to have problems, please try "
+"the <a href=\"%s\">support forums</a>."
+msgstr ""
+
+#: includes/class-demo-importer.php:216
+msgid "Try Again"
+msgstr ""
+
+#: includes/class-demo-importer.php:217
+msgid "Please suggest us!"
+msgstr ""
+
+#: includes/class-demo-importer.php:218
+#, php-format
+msgid "Number of Demos found: %d"
+msgstr ""
+
+#: includes/class-demo-importer.php:219
+msgid "No demos found. Try a different search."
+msgstr ""
+
+#: includes/class-demo-importer.php:221
+msgid "Expand Sidebar"
+msgstr ""
+
+#: includes/class-demo-importer.php:223
+msgid "Select one or more Demo features to filter by"
+msgstr ""
+
+#: includes/class-demo-importer.php:249
+#, php-format
+msgid ""
+"If you like %1$s please leave us a %2$s rating. A huge thanks in advance!"
+msgstr ""
+
+#: includes/class-demo-importer.php:254
+msgid "Thank you for importing with Bstone Demo Importer."
+msgstr ""
+
+#: includes/class-demo-importer.php:274 includes/class-demo-importer.php:276
+msgid "Help &amp; Support"
+msgstr ""
+
+#: includes/class-demo-importer.php:278
+#, php-format
+msgid ""
+"Should you need help understanding, using, or extending Bstone Demo "
+"Importer, <a href=\"%s\">please read our documentation</a>. You will find "
+"all kinds of resources including snippets, tutorials and much more."
+msgstr ""
+
+#: includes/class-demo-importer.php:282
+#, php-format
+msgid ""
+"For further assistance with Bstone Demo Importer core you can use the <a "
+"href=\"%1$s\">community forum</a>. If you need help with premium themes sold "
+"by Stack Themes, please <a href=\"%2$s\">contact our support</a>."
+msgstr ""
+
+#: includes/class-demo-importer.php:286
+msgid "Community forum"
+msgstr ""
+
+#: includes/class-demo-importer.php:286
+msgid "Bstone Support"
+msgstr ""
+
+#: includes/class-demo-importer.php:293 includes/class-demo-importer.php:295
+#: includes/class-demo-importer.php:297
+msgid "Reset wizard"
+msgstr ""
+
+#: includes/class-demo-importer.php:296
+msgid ""
+"If you need to reset the WordPress back to default again, please click on "
+"the button below."
+msgstr ""
+
+#: includes/class-demo-importer.php:302
+msgid "For more information:"
+msgstr ""
+
+#: includes/class-demo-importer.php:303
+msgid "About Demo Importer"
+msgstr ""
+
+#: includes/class-demo-importer.php:304
+msgid "WordPress.org project"
+msgstr ""
+
+#: includes/class-demo-importer.php:335
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: includes/class-demo-importer.php:339
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/class-demo-importer.php:506
+msgid "Bstone"
+msgstr ""
+
+#: includes/class-demo-importer.php:560
+msgid "No demo specified."
+msgstr ""
+
+#: includes/class-demo-importer.php:576
+msgid "Sorry, you are not allowed to import content."
+msgstr ""
+
+#: includes/class-demo-importer.php:610
+#: includes/functions-demo-importer.php:110
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr ""
+
+#: includes/class-demo-importer.php:693
+msgid "The XML file dummy content is missing."
+msgstr ""
+
+#: includes/class-demo-importer.php:784
+msgid "The DAT file customizer data is missing."
+msgstr ""
+
+#: includes/class-demo-importer.php:809
+msgid "The WIE file widget content is missing."
+msgstr ""
+
+#: includes/functions-demo-importer.php:31
+msgid "No plugin specified."
+msgstr ""
+
+#: includes/functions-demo-importer.php:44
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: includes/functions-demo-importer.php:351
+#, php-format
+msgid "%s plugin successfully installed."
+msgstr ""
+
+#: includes/functions-demo-importer.php:358
+#, php-format
+msgid "%s plugins successfully installed."
+msgstr ""
+
+#: includes/functions-demo-importer.php:368
+#, php-format
+msgid "%s install failed."
+msgstr ""
+
+#: includes/functions-demo-importer.php:373
+#, php-format
+msgid "%s installs failed."
+msgstr ""
+
+#: includes/functions-demo-importer.php:376
+msgid "Show more details"
+msgstr ""
+
+#: includes/importers/class-customizer-importer.php:36
+msgid ""
+"The customizer import file is not in a correct format. Please make sure to "
+"use the correct customizer import file."
+msgstr ""
+
+#: includes/importers/class-customizer-importer.php:40
+msgid ""
+"The customizer import file is not suitable for current theme. You can only "
+"import customizer settings for the same theme or a child theme."
+msgstr ""
+
+#: includes/importers/class-widget-importer.php:34
+msgid "Widget import data could not be read. Please try a different file."
+msgstr ""
+
+#: includes/importers/class-widget-importer.php:71
+msgid "Sidebar does not exist in theme (moving widget to Inactive)"
+msgstr ""
+
+#: includes/importers/class-widget-importer.php:93
+msgid "Site does not support widget"
+msgstr ""
+
+#: includes/importers/class-widget-importer.php:128
+msgid "Widget already exists"
+msgstr ""
+
+#: includes/importers/class-widget-importer.php:187
+msgid "Imported"
+msgstr ""
+
+#: includes/importers/class-widget-importer.php:190
+msgid "Imported to Inactive"
+msgstr ""
+
+#: includes/importers/class-widget-importer.php:196
+msgid "No Title"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:124
+#: includes/importers/wordpress-importer/class-wxr-importer.php:133
+#: includes/importers/wordpress-importer/class-wxr-importer.php:184
+#: includes/importers/wordpress-importer/class-wxr-importer.php:188
+#: includes/importers/wordpress-importer/class-wxr-importer.php:197
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:125
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:168
+msgid "All done."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:168
+msgid "Have fun!"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:169
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:189
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:205
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:230
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:257
+msgid "Assign Authors"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:258
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:260
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:270
+msgid "Import Attachments"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:273
+msgid "Download and import file attachments"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:277
+msgid "Submit"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:290
+msgid "Import author:"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:304
+msgid "or create new user with login name:"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:307
+msgid "as a new user:"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:315
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:317
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:382
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:441
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:493
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:554
+#: includes/importers/wordpress-importer/class-wxr-importer.php:799
+#, php-format
+msgid "Failed to import %1$s %2$s"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:645
+#, php-format
+msgid "Failed to import &#8220;%1$s&#8221;: Invalid post type %2$s"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:686
+#, php-format
+msgid "%1$s &#8220;%2$s&#8221; already exists."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:760
+#, php-format
+msgid "Failed to import %1$s &#8220;%2$s&#8221;"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:940
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:947
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1018
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1035
+msgid "Invalid file type"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1090
+msgid "Remote server did not respond"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1098
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1105
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1110
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1116
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1224
+msgid "Import WordPress"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1231
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1246
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-importer.php:1247
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:44
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:74
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:82
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:45
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:86
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:91
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:308
+#: includes/importers/wordpress-importer/class-wxr-parsers.php:504
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
