@@ -36,6 +36,11 @@ if ( 'Bstone' == $bstone_theme->name || 'Bstone' == $bstone_theme->parent_theme 
 		include_once dirname( __FILE__ ) . '/includes/class-bstone-demo-importer.php';
 	}
 
+
+	// if ( !defined( 'BSTONETT_PRO_DIR' ) ) {
+	// 	define( 'BSTONETT_PRO_DIR', plugin_dir_path( BDIM_PLUGIN_FILE ) );
+	// }
+
 	/**
 	 * Main instance of Bstone Demo importer.
 	 *

@@ -588,7 +588,36 @@ class TG_Demo_Importer {
 		$upgrader = new TG_Demo_Pack_Upgrader( $skin );
 		$template = strtolower( str_replace( '-pro', '', get_option( 'template' ) ) );
 		$packages = isset( $this->demo_packages->demos ) ? json_decode( wp_json_encode( $this->demo_packages->demos ), true ) : array();
-		$result   = $upgrader->install( "https://github.com/stackthemes/bstone-demo-pack/raw/master/packages/{$template}/{$slug}.zip" );
+		
+		$available_packages = $this->demo_packages;
+
+		$checkAvPackages = $available_packages->demos;
+
+		$chkPkgAv = $checkAvPackages->$slug;
+
+		$current_template   = get_option( 'template' );
+		$is_pro_theme_demo  = strpos( $current_template, '-pro' ) !== false;
+
+		$isProChk = $is_pro_theme_demo ? false : isset( $chkPkgAv->isPro );
+
+		$demoPackagePath = "https://github.com/stackthemes/bstone-demo-pack/raw/master/packages/{$template}/{$slug}.zip";
+
+		if( $isProChk ) {
+			$demoPackagePath = apply_filters(
+				'bstone_demo_data_path',
+				array(
+					"https://github.com/stackthemes/bstone-demo-pack/raw/master/packages/{$template}/{$slug}.zip",
+					$template,
+					$slug
+				)
+			);
+		}
+
+		if( is_array( $demoPackagePath ) ) {
+			$demoPackagePath = "https://github.com/stackthemes/bstone-demo-pack/raw/master/packages/{$template}/{$slug}.zip";
+		}
+
+		$result   = $upgrader->install( $demoPackagePath );
 
 		if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
 			$status['debug'] = $skin->get_upgrade_messages();		
@@ -631,8 +660,10 @@ class TG_Demo_Importer {
 			$this->import_dummy_xml( $slug, $demo_data, $status );
 			$this->import_core_options( $slug, $demo_data );
 			$this->import_elementor_schemes( $slug, $demo_data );
+			$this->import_bstone_data( $slug, $demo_data, $status );
 			$this->import_customizer_data( $slug, $demo_data, $status );
 			$this->import_widget_settings( $slug, $demo_data, $status );
+			$this->import_smart_slider_sliders( $slug, $demo_data, $status );
 
 			// Update imported demo ID.
 			update_option( 'bstone_demo_importer_activated_id', $slug );
@@ -814,6 +845,58 @@ class TG_Demo_Importer {
 			wp_send_json_error( $status );
 		}
 
+		return true;
+	}
+
+	/**
+	 * Import Bstone Data
+	 */
+	public function import_bstone_data( $demo_id, $demo_data, $status ) {
+
+		if ( ! empty( $demo_data['custom_json']['bstoneModSettings'] ) && function_exists( 'bstoneModsSettings' ) ) {
+
+			$modSettings = bstoneModsSettings( 'get' );
+			$newSettings = $demo_data['custom_json']['bstoneModSettings'];
+
+			foreach ( $newSettings as $modKey => $modStatus ) {
+				if( isset( $modSettings[$modKey] ) ) {
+					if( true != $modSettings[$modKey] ) {
+						$modSettings[$modKey] = true;
+					}
+				} else {
+					$modSettings[$modKey] = true;
+				}
+			}
+
+			bstoneModsSettings( 'update', $modSettings );
+		}
+
+		return true;
+	}
+
+	/**
+	 * Import Smart Slider form ss3 file
+	 *
+	 * @param  string $demo_id
+	 * @param  array  $demo_data
+	 * @param  array  $status
+	 * @return bool
+	 */
+	public function import_smart_slider_sliders( $demo_id, $demo_data, $status ) {
+		if ( ! empty( $demo_data['custom_json']['smartslider_sliders'] ) && class_exists( 'SmartSlider3' ) ) {
+
+			foreach ( $demo_data['custom_json']['smartslider_sliders'] as $slider_key => $slider_file ) {	
+
+				$import_file = $this->get_import_file_path( $slider_file );
+
+				if ( is_file( $import_file ) ) {					
+					$sliderID = SmartSlider3::import( $import_file );
+				} else {
+					$status['errorMessage'] = __( 'The SS3 file slider content is missing.', 'bstone-demo-importer' );
+					wp_send_json_error( $status );
+				}
+			}
+		}
 		return true;
 	}
 
